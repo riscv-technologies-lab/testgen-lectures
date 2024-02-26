@@ -116,11 +116,11 @@ docker create \
     --interactive \ # keep STDIN open even if not attached
     --tty \ # allocate a pseudo-TTY
 	--env "TERM=xterm-256color" \ # enable colors
-	--mount type=bind,source="$$(pwd)",target="$$(pwd)" \ # mount source dir to target dir
+	--mount type=bind,source="$(pwd)",target="$(pwd)" \ # mount source dir to target dir
 	--name ${CONTAINER} \ # set container name
 	--ulimit nofile=1024:1024 \ # workaround for valgring
-	--user "$$(id -u ${USER}):$$(id -g ${USER})" \ # preserve user accesses and ownership
-	--workdir "$$HOME" \ # working directory inside the container
+	--user "$(id -u ${USER}):$(id -g ${USER})" \ # preserve user accesses and ownership
+	--workdir "$HOME" \ # working directory inside the container
 	${IMAGE} # image name for this container
 ```
 
@@ -173,11 +173,11 @@ docker run \
     --tty \ # allocate a pseudo-TTY
     --detach \ # run command in the background
 	--env "TERM=xterm-256color" \ # enable colors
-	--mount type=bind,source="$$(pwd)",target="$$(pwd)" \ # mount source dir to target dir
+	--mount type=bind,source="$(pwd)",target="$(pwd)" \ # mount source dir to target dir
 	--name ${CONTAINER} \ # set container name
 	--ulimit nofile=1024:1024 \ # workaround for valgring
-	--user "$$(id -u ${USER}):$$(id -g ${USER})" \ # preserve user accesses and ownership
-	--workdir "$$HOME" \ # working directory inside the container
+	--user "$(id -u ${USER}):$(id -g ${USER})" \ # preserve user accesses and ownership
+	--workdir "$HOME" \ # working directory inside the container
 	${IMAGE} # image name for this container
 ```
 
@@ -246,13 +246,13 @@ docker run \
     --interactive \ # keep STDIN open even if not attached
     --tty \ # allocate a pseudo-TTY
     --detach \ # run command in the background
-	--env "TERM=xterm-256color" \ # enable colors
-	--mount type=bind,source="$$(pwd)",target="$$(pwd)" \ # mount source dir to target dir
-	--name ${CONTAINER} \ # set container name
-	--ulimit nofile=1024:1024 \ # workaround for valgring
-	--user "$$(id -u ${USER}):$$(id -g ${USER})" \ # preserve user accesses and ownership
-	--workdir "$$HOME" \ # working directory inside the container
-	${IMAGE} # image name for this container
+    --env "TERM=xterm-256color" \ # enable colors
+    --mount type=bind,source="$(pwd)",target="$(pwd)" \ # mount source dir to target dir
+    --name ${CONTAINER} \ # set container name
+    --ulimit nofile=1024:1024 \ # workaround for valgring
+    --user "$(id -u ${USER}):$(id -g ${USER})" \ # preserve user accesses and ownership
+    --workdir "$HOME" \ # working directory inside the container
+    ${IMAGE} # image name for this container
 # Create group associated with your user
 docker exec --user root ${CONTAINER} bash -c "groupadd ${USER} -g $(id -g ${USER})"
 # Create user with same uid and gid as host user
