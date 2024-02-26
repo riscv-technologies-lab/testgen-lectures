@@ -39,8 +39,8 @@ docker run \
     --workdir "$WORKDIR" \ # working directory inside the container
     ${IMAGE} # image name for this container
 # Setup ownership inside container
-docker exec --user root $(CONTAINER_NAME) \
-    bash -c "chown $$(id -u):$$(id -g) $$HOME"
+docker exec --user root ${CONTAINER} \
+    bash -c "chown $(id -u):$(id -g) ${HOME}"
 # Create group associated with your user
 docker exec --user root ${CONTAINER} \
     bash -c "groupadd ${USER} -g $(id -g ${USER})"
