@@ -11,3 +11,4 @@ Lectures on the test generators course
 - [Docker setup](tutorials/docker-setup.md "Docker setup")
 - [Docker howto](tutorials/docker.md "Docker howto")
 - [Environment variables](tutorials/env-vars.md "Env vars")
+- [Syntacore Development Toolkit](tutorials/sc-dt.md "Syntacore Development Toolkit")
