@@ -9,3 +9,4 @@ Lectures on the test generators course
 ## Tutorials
 
 - [Docker setup](tutorials/docker-setup.md "Docker setup")
+- [Docker howto](tutorials/docker.md "Docker howto")
