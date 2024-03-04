@@ -6,6 +6,7 @@ Lectures on the test generators course
 
 1. [Introduction](slides/01_Introduction.pdf "Introduction")
 1. [RISC-V Ecosystem](slides/02_RISCV_Ecosystem.pdf "RISCV Ecosystem")
+1. [Technological cycle](slides/03_Technological_cycle.pdf "Technological cycle")
 
 ## Tutorials
 
