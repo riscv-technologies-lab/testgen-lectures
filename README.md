@@ -16,3 +16,4 @@ Lectures on the test generators course
 - [Board SSH setup](tutorials/ssh-setup.md "SSH setup")
 - [Environment variables](tutorials/env-vars.md "Env vars")
 - [Syntacore Development Toolkit](tutorials/sc-dt.md "Syntacore Development Toolkit")
+- [Binutils Aikido](tutorials/binutils-aikido.md "Binutils Aikido")
