@@ -8,6 +8,7 @@ Lectures on the test generators course
 1. [RISC-V Ecosystem](slides/02_RISCV_Ecosystem.pdf "RISCV Ecosystem")
 1. [Technological cycle](slides/03_Technological_cycle.pdf "Technological cycle")
 1. [Technological cycle](slides/04_Simulators.pdf "Simulators")
+1. [Quality control](slides/05_Quality.pdf "QA")
 
 ## Tutorials
 
