@@ -9,6 +9,7 @@ Lectures on the test generators course
 1. [Technological cycle](slides/03_Technological_cycle.pdf "Technological cycle")
 1. [Simulators](slides/04_Simulators.pdf "Simulators")
 1. [Quality control](slides/05_Quality.pdf "QA")
+1. [LLVM](slides/06_LLVM.pdf "LLVM")
 
 ## Tutorials
 
