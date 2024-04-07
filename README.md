@@ -1,6 +1,4 @@
-# testgen-lectures
-
-Lectures on the test generators course
+# Test Generators Course Lectures
 
 ## Slides
 
