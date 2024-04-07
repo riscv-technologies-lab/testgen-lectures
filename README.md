@@ -19,6 +19,7 @@
 - [How to run hello world](tutorials/hello-world.md "How to run hello world")
 - [Binutils Aikido](tutorials/binutils-aikido.md "Binutils Aikido")
 - [Snippy Model Integration](tutorials/snippy-model-integration.md "Snippy Model Integration")
+- [How to get Snippy](tutorials/how-to-get-snippy.md "How to get Snippy")
 
 ## Labs
 
