@@ -18,6 +18,7 @@
 - [Syntacore Development Toolkit](tutorials/sc-dt.md "Syntacore Development Toolkit")
 - [How to run hello world](tutorials/hello-world.md "How to run hello world")
 - [Binutils Aikido](tutorials/binutils-aikido.md "Binutils Aikido")
+- [Snippy Model Integration](tutorials/snippy-model-integration.md "Snippy Model Integration")
 
 ## Labs
 
