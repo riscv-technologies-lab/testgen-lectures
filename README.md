@@ -8,6 +8,7 @@
 1. [Simulators](slides/04_Simulators.pdf "Simulators")
 1. [Quality control](slides/05_Quality.pdf "QA")
 1. [LLVM](slides/06_LLVM.pdf "LLVM")
+1. [LLVM Snippy](slides/07_llvm-snippy.pdf "LLVM Snippy")
 
 ## Tutorials
 
