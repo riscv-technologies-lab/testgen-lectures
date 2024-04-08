@@ -24,3 +24,4 @@
 ## Labs
 
 - [Simulators benchmarking](labs/sim-bench/README.md "Simulators benchmarking")
+- [Snippy first steps](labs/snippy-first-steps/README.md "Snippy first steps")
