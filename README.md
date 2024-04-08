@@ -23,4 +23,4 @@
 
 ## Labs
 
-- [Simulators benchmarking](labs/sim-bench.md "Simulators benchmarking")
+- [Simulators benchmarking](labs/sim-bench/README.md "Simulators benchmarking")
