@@ -9,6 +9,7 @@
 1. [Quality control](slides/05_Quality.pdf "QA")
 1. [LLVM](slides/06_LLVM.pdf "LLVM")
 1. [LLVM Snippy](slides/07_llvm-snippy.pdf "LLVM Snippy")
+1. [Flow generation in LLVM Snippy](slides/08_llvm-snippy_Flow_generation.pdf "Flow generation in LLVM Snippy")
 
 ## Tutorials
 
