@@ -2,15 +2,7 @@
 
 ## Slides
 
-1. [Introduction](slides/01_Introduction.pdf "Introduction")
-1. [RISC-V Ecosystem](slides/02_RISCV_Ecosystem.pdf "RISCV Ecosystem")
-1. [Technological cycle](slides/03_Technological_cycle.pdf "Technological cycle")
-1. [Simulators](slides/04_Simulators.pdf "Simulators")
-1. [Quality control](slides/05_Quality.pdf "QA")
-1. [LLVM](slides/06_LLVM.pdf "LLVM")
-1. [LLVM Snippy](slides/07_llvm-snippy.pdf "LLVM Snippy")
-1. [Flow generation in LLVM Snippy](slides/08_llvm-snippy_Flow_generation.pdf "Flow generation in LLVM Snippy")
-1. [CF generation in LLVM Snippy](slides/09_llvm-snippy_CF_generation.pdf "CF generation in LLVM Snippy")
+1. [Introduction](slides/01_Intro.pdf "Introduction")
 
 ## Tutorials
 
