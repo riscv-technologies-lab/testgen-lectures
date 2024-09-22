@@ -16,7 +16,7 @@
 
 - [Docker setup](tutorials/docker-setup.md "Docker setup")
 - [Docker howto](tutorials/docker.md "Docker howto")
-- [Board SSH setup](tutorials/ssh-setup.md "SSH setup")
+- [Board SSH setup](tutorials/ssh-setup-wireless.md "SSH setup")
 - [Environment variables](tutorials/env-vars.md "Env vars")
 - [Syntacore Development Toolkit](tutorials/sc-dt.md "Syntacore Development Toolkit")
 - [How to run hello world](tutorials/hello-world.md "How to run hello world")

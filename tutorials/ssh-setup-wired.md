@@ -1,20 +1,22 @@
-#### How to setup a board network connection
+# How to setup a board network connection for wired connection
 
-**note:** you should do this after board physical connection via cable 
+**note:** you should do this after board physical connection via cable
 
 First of all, you need to setup your wired network connection.
-* Open network settings 
+
+* Open network settings
 * Choose settings for your active wired connection
-* Open **IPv4** tab 
+* Open **IPv4** tab
 * Select **Shared to other computers** method
 
-Now you need to get a current IP address for ethernet device 
+Now you need to get a current IP address for ethernet device:
 
 ```sh
 ip address show
 ```
 
 For example, you can see something like that: 
+
 ```
 2: enp1s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
     link/ether c8:5a:cf:b5:3e:51 brd ff:ff:ff:ff:ff:ff
@@ -25,30 +27,36 @@ For example, you can see something like that:
 
 ```
 
-You need to pick this `10.42.0.1/24` address 
+You need to pick this `10.42.0.1/24` address
+
 ```sh
 export ETHERNET_IPV4='10.42.0.1/24'
 ```
 
-**note**: *Ethernet* device is something beginning with 'e' 
+**note**: *Ethernet* device is something beginning with 'e'
 
-After that to find board IP scan the network with the following command (be sure you have `nmap` utility installed in your PC)
+After that to find board IP scan the network with the following command
+(be sure you have `nmap` utility installed in your PC)
 
 ```sh
 nmap -sn ${ETHERNET_IPV4}
 ```
 
 It's expected it gives you an IP address. Save it
+
 ```sh
 LICHEE_IPV4='...'
-``` 
+```
 
-### SSH connection
+## SSH connection
+
 For now you have everything to install ssh connection with your board with following commands
+
 ```sh
 ssh sipeed@10.42.0.208
 ```
 
 **note**:
+
 * *User:* **sipeed**
-* *Password:* **licheepi** 
+* *Password:* **licheepi**

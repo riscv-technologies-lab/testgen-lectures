@@ -63,7 +63,7 @@ qemu-riscv64 hello.x
 
 ### GDB (remote-debug)
 
-Before starting remote debugging, please ensure you done all steps from [ssh setup](ssh-setup.md).
+**note** Before starting remote debugging, please ensure you done all steps from [ssh setup](ssh-setup-wireless.md).
 
 ```sh
 riscv64-unknown-elf-gcc hello.c \
