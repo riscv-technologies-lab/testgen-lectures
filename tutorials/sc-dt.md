@@ -15,46 +15,29 @@ for Syntacore cores. The toolkit include the following basic packages:
 - QEMU:
    - System level with Syntacore platforms
    - User level for Linux applications
-   
+
 ## Recommended workflow
 
-On host:
-
 ```sh
-export IMAGE=ghcr.io/riscv-technologies-lab/rv_tools_image:1.0.1
+export IMAGE=ghcr.io/riscv-technologies-lab/rv_tools_image:1.0.9
 export CONTAINER=rv_tools_experiments
 export WORKDIR=$HOME/wd # or any other you want
 mkdir -p ${WORKDIR}
 cd ${WORKDIR}
 docker run \
-    --interactive \ # keep STDIN open even if not attached
-    --tty \ # allocate a pseudo-TTY
-    --detach \ # run command in the background
-    --env "TERM=xterm-256color" \ # enable colors
-    --mount type=bind,source="$(pwd)",target="$(pwd)" \ # mount source dir to target dir
-    --name ${CONTAINER} \ # set container name
-    --ulimit nofile=1024:1024 \ # workaround for valgring
-    --user "$(id -u ${USER}):$(id -g ${USER})" \ # preserve user accesses and ownership
-    --network=host \ # use the same network as host, generally bad practice
-    --workdir "$WORKDIR" \ # working directory inside the container
-    ${IMAGE} # image name for this container
-# Setup ownership inside container
-docker exec --user root ${CONTAINER} \
-    bash -c "chown $(id -u):$(id -g) ${HOME}"
-# Create group associated with your user
-docker exec --user root ${CONTAINER} \
-    bash -c "groupadd ${USER} -g $(id -g ${USER})"
-# Create user with same uid and gid as host user
-docker exec --user root ${CONTAINER} \
-    bash -c "useradd ${USER} -u $(id -u ${USER}) -g $(id -g ${USER})"
+    --interactive \
+    --tty \
+    --detach \
+    --env "TERM=xterm-256color" \
+    --env "USER_ID=$(id --user)" \
+    --env "USER_NAME=$(id --user --name)" \
+    --mount type=bind,source="$(pwd)",target="$(pwd)" \
+    --ulimit nofile=1024:1024 \
+    --network=host \
+    --workdir "$WORKDIR" \
+    --name ${CONTAINER} \
+    ${IMAGE}
 docker exec -it ${CONTAINER} bash
-```
-
-Inside container
-
-```sh
-source /opt/sc-dt/env.sh
-env # check that environment updated
 ```
 
 ### Compiler
@@ -89,9 +72,9 @@ riscv64-unknown-elf-gcc hello.c \
     -O0 \ # disable optimizations
     -g # build with debug info
 
-scp ${SC_GDB_PATH}/sysroot/usr/bin/riscv64-unknown-linux-gnu-gdbserver sipeed@${LICHEE_IPV4}:~/
-scp hello.x sipeed@${LICHEE_IPV4}:~/
-ssh sipeed@${LICHEE_IPV4} "~/riscv64-unknown-linux-gnu-gdbserver :2345 hello.x"
+scp -p ${LICHEE_SSH_PORT} ${SC_GDB_PATH}/sysroot/usr/bin/riscv64-unknown-linux-gnu-gdbserver sipeed@${LICHEE_IPV4}:~/
+scp -p ${LICHEE_SSH_PORT} hello.x sipeed@${LICHEE_IPV4}:~/
+ssh -p ${LICHEE_SSH_PORT} sipeed@${LICHEE_IPV4} "~/riscv64-unknown-linux-gnu-gdbserver ${LICHEE_GDBSERVER_PORT} hello.x"
 riscv64-unknown-linux-gnu-gdb hello.x
 ```
 
@@ -101,4 +84,53 @@ In GDB:
 target extended-remote ${LICHEE_IPV4}:2345
 load hello.x
 start
+```
+
+Now you can try to debug buggy-sort:
+
+```c
+#include <stdio.h>
+
+typedef struct {
+  char *data;
+  int key;
+} item;
+
+item array[] = {
+    {"Bill", 62}, {"Hill", 60}, {"Barrak", 42}, {"Dicky", 105}, {"W.", 1},
+};
+
+/* Simple but buggy bubble sort  *
+ * Can you find the bugs?        */
+void sort(item *a, int n) {
+  int i = 0, j = 0;
+  int s = 1;
+
+  for (; i < n && s != 0; i++) {
+    s = 0;
+    for (j = 0; j < n; j++)
+      if (a[j].key > a[j + 1].key) {
+        item t = a[j];
+        a[j] = a[j + 1];
+        a[j + 1] = t;
+        s++;
+      }
+    n--;
+  }
+}
+
+void print_arr(item *a, int n) {
+  int i;
+
+  for (i = 0; i != n; ++i)
+    printf("%d: %s\n", a[i].key, a[i].data);
+}
+
+int main() {
+  print_arr(array, 5);
+  sort(array, 5);
+  printf("\nAfter sort:\n");
+  print_arr(array, 5);
+  return 0;
+}
 ```
