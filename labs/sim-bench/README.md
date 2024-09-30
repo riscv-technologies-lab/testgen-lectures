@@ -10,7 +10,7 @@ docker run -it --mount type=bind,source="$(pwd)",target="$(pwd)" \
     --env "USER_NAME=$(id --user --name)" \
     --name rv_sim_bench --workdir "$(pwd)" \
     --network=host \
-    ghcr.io/riscv-technologies-lab/rv_tools_image:1.0.8
+    ghcr.io/riscv-technologies-lab/rv_tools_image:1.0.10
 ```
 
 If you already did **this** `docker run`, you can just start the container:

@@ -19,7 +19,7 @@ for Syntacore cores. The toolkit include the following basic packages:
 ## Recommended workflow
 
 ```sh
-export IMAGE=ghcr.io/riscv-technologies-lab/rv_tools_image:1.0.9
+export IMAGE=ghcr.io/riscv-technologies-lab/rv_tools_image:1.0.10
 export CONTAINER=rv_tools_experiments
 export WORKDIR=$HOME/wd # or any other you want
 mkdir -p ${WORKDIR}
@@ -32,7 +32,6 @@ docker run \
     --env "USER_ID=$(id --user)" \
     --env "USER_NAME=$(id --user --name)" \
     --mount type=bind,source="$(pwd)",target="$(pwd)" \
-    --ulimit nofile=1024:1024 \
     --network=host \
     --workdir "$WORKDIR" \
     --name ${CONTAINER} \
