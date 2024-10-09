@@ -23,3 +23,7 @@
 
 - [Simulators benchmarking](labs/sim-bench/README.md "Simulators benchmarking")
 - [Snippy first steps](labs/snippy-first-steps/README.md "Snippy first steps")
+
+## Homeworks
+
+- [RISC-V sim](homeworks/RISC-V_sim.md "RISC-V sim")
