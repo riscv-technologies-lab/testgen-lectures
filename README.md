@@ -7,6 +7,7 @@
 1. [Technological cycle](slides/03_Technological_cycle.pdf "Technological cycle")
 1. [CPU Simulation](slides/04_Simulators.pdf "CPU Simulation")
 1. [Speedup simulation](slides/05_Speedup_simulation.pdf "Speedup simulation")
+1. [Execution environment](slides/06_Execution_environment.pdf "Execution environment")
 
 ## Tutorials
 
