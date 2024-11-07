@@ -8,6 +8,7 @@
 1. [CPU Simulation](slides/04_Simulators.pdf "CPU Simulation")
 1. [Speedup simulation](slides/05_Speedup_simulation.pdf "Speedup simulation")
 1. [Execution environment](slides/06_Execution_environment.pdf "Execution environment")
+1. ['Hello world' bootstrap](slides/07_Hello_world_bootstrap.pdf "Hello world bootstrap")
 
 ## Tutorials
 
