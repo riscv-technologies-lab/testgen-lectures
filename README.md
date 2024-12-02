@@ -11,6 +11,7 @@
 1. ['Hello world' bootstrap](slides/07_Hello_world_bootstrap.pdf "Hello world bootstrap")
 1. [Supervisor](slides/08_Supervisor.pdf "Supervisor")
 1. [Porting](slides/09_Porting.pdf "Porting")
+1. [RISC-V Innovations](slides/10_RISC-V_innovations.pdf "RISC-V Innovations")
 
 ## Tutorials
 
