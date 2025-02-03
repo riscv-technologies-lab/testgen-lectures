@@ -12,6 +12,7 @@
 1. [Supervisor](slides/08_Supervisor.pdf "Supervisor")
 1. [Porting](slides/09_Porting.pdf "Porting")
 1. [RISC-V Innovations](slides/10_RISC-V_innovations.pdf "RISC-V Innovations")
+1. [LLVM overview](slides/11_LLVM.pdf "LLVM overview")
 
 ## Tutorials
 
