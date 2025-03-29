@@ -14,6 +14,7 @@
 1. [RISC-V Innovations](slides/10_RISC-V_innovations.pdf "RISC-V Innovations")
 1. [LLVM overview](slides/11_LLVM.pdf "LLVM overview")
 1. [LLVM internals](slides/12_LLVM_internals.pdf "LLVM internals")
+1. [LLVM CodeGen](slides/13_LLVM_codegen.pdf "LLVM CodeGen")
 
 ## Tutorials
 
