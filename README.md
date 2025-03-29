@@ -15,6 +15,7 @@
 1. [LLVM overview](slides/11_LLVM.pdf "LLVM overview")
 1. [LLVM internals](slides/12_LLVM_internals.pdf "LLVM internals")
 1. [LLVM CodeGen](slides/13_LLVM_codegen.pdf "LLVM CodeGen")
+1. [Verification, coverage and model checking](slides/14_Verification_intro.pdf "Verification intro")
 
 ## Tutorials
 
