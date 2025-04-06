@@ -20,6 +20,7 @@
 1. [Snippy & model](slides/16_LLVM-Snippy_model.pdf "Snippy model")
 1. [Snippy main flow generation](slides/17_LLVM-Snippy_Flow_generation.pdf "Snippy flow generation")
 1. [Snippy control flow generation](slides/18_LLVM-Snippy_CF_generation.pdf "Snippy CF generation")
+1. [Snippy functions generation](slides/19_LLVM-Snippy_Functions_generation.pdf "Snippy functions generation")
 
 ## Tutorials
 
