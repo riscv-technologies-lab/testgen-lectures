@@ -23,6 +23,7 @@
 1. [Snippy functions generation](slides/19_LLVM-Snippy_Functions_generation.pdf "Snippy functions generation")
 1. [ALU verification](slides/20_Verification_ALU.pdf "ALU verification")
 1. [FPU verification](slides/21_Verification_FPU.pdf "FPU verification")
+1. [BPU verification](slides/22_Verification_BPU.pdf "BPU verification")
 
 ## Tutorials
 
