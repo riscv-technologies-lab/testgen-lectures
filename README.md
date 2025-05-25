@@ -22,6 +22,7 @@
 1. [Snippy control flow generation](slides/18_LLVM-Snippy_CF_generation.pdf "Snippy CF generation")
 1. [Snippy functions generation](slides/19_LLVM-Snippy_Functions_generation.pdf "Snippy functions generation")
 1. [ALU verification](slides/20_Verification_ALU.pdf "ALU verification")
+1. [FPU verification](slides/21_Verification_FPU.pdf "FPU verification")
 
 ## Tutorials
 
