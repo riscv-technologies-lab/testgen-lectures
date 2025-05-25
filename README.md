@@ -24,6 +24,7 @@
 1. [ALU verification](slides/20_Verification_ALU.pdf "ALU verification")
 1. [FPU verification](slides/21_Verification_FPU.pdf "FPU verification")
 1. [BPU verification](slides/22_Verification_BPU.pdf "BPU verification")
+1. [Memory verification](slides/23_Verification_Memory.pdf "Memory verification")
 
 ## Tutorials
 
