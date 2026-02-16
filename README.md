@@ -1,5 +1,9 @@
 # Test Generators Course Lectures
 
+## Slides
+
+1. [Introduction](slides/01_Intro.pdf "Introduction")
+
 ## Tutorials
 
 - [Docker setup](tutorials/docker-setup.md "Docker setup")
