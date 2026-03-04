@@ -3,6 +3,7 @@
 ## Slides
 
 1. [Introduction](slides/01_Intro.pdf "Introduction")
+1. [CPU Simulation](slides/02_Simulators.pdf "CPU Simulation")
 
 ## Tutorials
 
