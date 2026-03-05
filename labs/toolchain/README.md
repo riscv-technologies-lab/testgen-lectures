@@ -84,7 +84,7 @@ to can compile `Hello, world!` program for RISC-V you need:
 
 1. Dump program sample
 
-        echo "#include <stdio.h>\nint main() { printf("Hello, RISC-V!"); }" > hello.c
+        echo -e '#include <stdio.h> \n\nint main() { \n\tprintf("Hello, RISC-V!\\n"); \n}' > hello.c
 
 1. Compile
 
